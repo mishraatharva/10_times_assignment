@@ -1,0 +1,35 @@
+Project Documentation
+1. Project Overview
+
+Objective:
+-To fetch news data from various URLs.
+-To preprocess and clean the data for better usability.
+-To categorize the news data using a Keyword-Based Categorization approach.
+-To store the categorized data in a MySQL database using SQLAlchemy. i.e all data with label "Terrorism/Protest/Political Unrest/Riot" should be together, similar for other data   also.
+
+Available Categories:
+  -Terrorism/Protest/Political Unrest/Riot
+  -Positive/Uplifting
+  -Natural Disasters
+  -Others
+
+2. Libraries Used:
+   - nltk
+   - spacy
+   - BeautifulSoup
+   - sqlalchemy
+   - celery
+   - pandas/numpy
+
+3. Project Overflow:
+    - Fetched data from different urls, and then applied some data cleaning operaions.
+    
+      => Data Cleaning Operaions:
+        - lower case the data.
+        - removing special characters like '"' .
+        - remove every thing except [a-zA-Z].
+        - remove stopwords and perform lemmatization.
+    
+    - Stored the cleaned data in a local dataframe named as "dataframe" by converting the data in dataframe and concatenated with a local dataframe created.
+    - Sort the dataframe itself every time you CONCAT new data in it.(Because our final objective is "To store the categorized data".
+    - save the dataframe to mysql database using sqlAlchamy.

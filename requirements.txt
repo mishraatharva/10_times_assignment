@@ -1,0 +1,12 @@
+beautifulsoup4
+lxml
+pandas
+nltk
+spacy
+celery
+redis
+mysql-connector-python
+pymysql
+# mysqlclient : uninstalled it
+openpyxl
+python-dateutil
